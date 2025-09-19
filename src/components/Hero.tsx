@@ -26,21 +26,16 @@ const Hero = ({ onScrollToContact }) => {
         <div className="mt-16 animate-slideUp">
           <div className="bg-gray-50 rounded-2xl p-8 shadow-2xl">
             <div className="bg-black rounded-xl overflow-hidden max-w-sm mx-auto">
-              <video
-                className="w-400px h-900px object-cover"
-                controls
-                autoPlay
-                muted
-                loop
-                playsInline
-                style={{ playbackRate: 2 }}
-                onLoadedMetadata={(e) => {
-                  e.target.playbackRate = 2.0;
-                }}
-              >
-                <source src="src/components/assets/Agent.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <div style={{ padding: '234.38% 0 0 0', position: 'relative' }}>
+                <iframe 
+                  src="https://player.vimeo.com/video/1120192009?badge=0&autopause=0&player_id=0&app_id=58479" 
+                  frameBorder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
+                  title="Agente inmobiliario"
+                />
+              </div>
             </div>
             <p className="mt-4 text-purple-700 font-semibold text-lg">Telegram AI Demo</p>
           </div>
