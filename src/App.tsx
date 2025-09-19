@@ -5,7 +5,7 @@ import Pricing from './components/Pricing';
 import CTA from './components/CTA';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const contactRef = useRef(null);
